@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="Current" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <!--Project was exported from assembly: D:\SteamLibrary\steamapps\common\Call of Duty Black Ops\bin\Decompiling\Launcher.exe-->
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -11,6 +11,11 @@
     <ApplicationVersion>0.1.0.0</ApplicationVersion>
     <FileAlignment>512</FileAlignment>
     <RootNamespace>LauncherCS</RootNamespace>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -43,12 +48,24 @@
     <Compile Include="Settings.cs" />
     <Compile Include="NativeMethods.cs" />
     <Compile Include="Launcher.cs" />
-    <Compile Include="CreateMapForm.cs" />
-    <Compile Include="ZoneSourceForm.cs" />
-    <Compile Include="CreateModForm.cs" />
-    <Compile Include="LightOptionsForm.cs" />
-    <Compile Include="BspOptionsForm.cs" />
-    <Compile Include="LauncherForm.cs" />
+    <Compile Include="CreateMapForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZoneSourceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateModForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LightOptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BspOptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LauncherForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Properties\Resources.cs" />
     <Compile Include="AssemblyInfo.cs" />
   </ItemGroup>

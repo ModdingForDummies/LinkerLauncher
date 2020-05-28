@@ -1,0 +1,11 @@
+F:\IW4\linkerlauncher\LinkerLauncher\obj\Release\LinkerLauncher.csprojAssemblyReference.cache
+F:\IW4\linkerlauncher\LinkerLauncher\obj\Release\LauncherCS.BspOptionsForm.resources
+F:\IW4\linkerlauncher\LinkerLauncher\obj\Release\LauncherCS.CreateMapForm.resources
+F:\IW4\linkerlauncher\LinkerLauncher\obj\Release\LauncherCS.CreateModForm.resources
+F:\IW4\linkerlauncher\LinkerLauncher\obj\Release\LauncherCS.Launcher.Properties.Resources.resources
+F:\IW4\linkerlauncher\LinkerLauncher\obj\Release\LauncherCS.LauncherForm.resources
+F:\IW4\linkerlauncher\LinkerLauncher\obj\Release\LauncherCS.LightOptionsForm.resources
+F:\IW4\linkerlauncher\LinkerLauncher\obj\Release\LauncherCS.Properties.Resources.resources
+F:\IW4\linkerlauncher\LinkerLauncher\obj\Release\LauncherCS.ZoneSourceForm.resources
+F:\IW4\linkerlauncher\LinkerLauncher\obj\Release\LinkerLauncher.csproj.GenerateResource.cache
+F:\IW4\linkerlauncher\LinkerLauncher\obj\Release\LinkerLauncher.csproj.CoreCompileInputs.cache

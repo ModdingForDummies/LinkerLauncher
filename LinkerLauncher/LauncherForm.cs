@@ -2297,14 +2297,14 @@ namespace LauncherCS
     private void LauncherDeleteMap_Click(object sender, EventArgs e)
     {
       string[] mapFiles1 = LauncherCS.Launcher.GetMapFiles(this.mapName);
-      if (DialogResult.Yes != MessageBox.Show("The following files would be deleted:\n\n" + LauncherCS.Launcher.StringArrayToString(mapFiles1), "Are you sure you want to delete these files?", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation))
+      if (DialogResult.Yes != MessageBox.Show("The following files would be deleted:\n\n" + LauncherCS.Launcher.StringArrayToString(mapFiles1), "Are you sure you want me to delete these files?", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation))
         return;
       foreach (string fileName in mapFiles1)
         LauncherCS.Launcher.DeleteFile(fileName);
       string[] mapFiles2 = LauncherCS.Launcher.GetMapFiles(this.mapName);
       if (mapFiles2.Length != 0)
       {
-        int num = (int) MessageBox.Show("Could not delete the following files:\n\n" + LauncherCS.Launcher.StringArrayToString(mapFiles2), "Error deleting files", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+        int num = (int) MessageBox.Show("I could not delete the following files:\n\n" + LauncherCS.Launcher.StringArrayToString(mapFiles2), "There was an error deleting files", MessageBoxButtons.OK, MessageBoxIcon.Hand);
       }
       this.UpdateMapList();
       this.EnableMapList();
@@ -2849,12 +2849,12 @@ namespace LauncherCS
 
     private void LauncherWikiLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
     {
-      Process.Start("http://wiki.treyarch.com");
+      Process.Start("https://moddingfordummies.proboards.com");
     }
 
     private void LauncherwikiToolStripMenuItem_Click(object sender, EventArgs e)
     {
-      Process.Start("http://wiki.treyarch.com");
+      Process.Start("https://moddingfordummies.proboards.com");
     }
 
     private void LaunchProcess(
@@ -2948,7 +2948,7 @@ namespace LauncherCS
         }
         catch
         {
-          this.WriteConsole("FAILED TO EXECUTE: " + processFileName + " " + arguments, true);
+          this.WriteConsole("Failed to run: " + processFileName + " " + arguments, true);
           if (this.processFinishedDelegate == null)
             return;
           LauncherForm.ProcessFinishedDelegate finishedDelegate = this.processFinishedDelegate;
