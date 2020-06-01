@@ -459,7 +459,7 @@ namespace LauncherCS
 
     private void CompileLevelReflectionsDelegate(Process lastProcess)
     {
-      this.CompileLevelHelper("compile_reflections", new LauncherForm.ProcessFinishedDelegate(this.CompileLevelBspInfoDelegate), lastProcess, LauncherCS.Launcher.GetGameTool(this.IsMP()), "allowdupe +set developer 1 +set logfile 2 +set thereisacow 1960 +set com_introplayed 1 +set r_fullscreen 0 +set fs_usedevdir 1 +set ui_autoContinue 1 +set r_reflectionProbeGenerateExit 1 +set useFastFile 0 +set r_fullscreen 0 +set r_reflectionProbeRegenerateAll 1 +set r_zFeather 1 +set r_reflectionProbeGenerate 1 +devmap " + this.mapName);
+      this.CompileLevelHelper("compile_reflections", new LauncherForm.ProcessFinishedDelegate(this.CompileLevelBspInfoDelegate), lastProcess, LauncherCS.Launcher.GetGameTool(this.IsMP()), "allowdupe +set developer 1 +set logfile 2 +set thereisacow 1960 +set com_introplayed 1 +set r_fullscreen 0 +set fs_usedevdir 1 +set ui_autoContinue 1 +set r_reflectionProbeGenerateExit 1 +set useFastFile 0 +set r_fullscreen 0 +set r_reflectionProbeRegenerateAll 1 +set r_zFeather 1 +set r_reflectionProbeGenerate 1 +set r_filmusetweaks 1 +seta r_filmtweakcolortemp "8000 8000 8000" +set r_filmtweaklighttint ".1 .1 .1" +set r_filmtweakmidtint ".1 .1 .1" +set r_filmtweakdarktint ".1 .1 .1" +devmap " + this.mapName);
     }
 
     private void CompileLevelRunGameDelegate(Process lastProcess)
